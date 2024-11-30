@@ -1,0 +1,313 @@
+body {
+    background-color: #f4f6f9;
+}
+.nav-link {
+    font-size: 1.1rem;
+    padding: 12px 15px;
+    color: #495057;
+    transition: background-color 0.2s, color 0.2s;
+}
+.nav-link:hover {
+    background-color: #e9ecef;
+    color: #007bff;
+}
+.nav-link.active {
+    background-color: #007bff;
+    color: white;
+}
+.nav-pills .nav-link i {
+    margin-right: 8px;
+}
+.sidebar {
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.content {
+    padding: 20px;
+}
+.social-links a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 1.5rem;
+    transition: color 0.2s;
+}
+.social-links a:hover {
+    color: #0056b3;
+}
+.hidden {
+    display: none;
+}
+.round-image {
+    border-radius: 50%;
+    border: 5px solid #007bff; 
+}
+.content {
+    margin-left: 280px; 
+}
+/* Hoverable effect for icons */
+.icon-hover {
+    transition: transform 0.3s ease;
+}
+
+.icon-hover:hover {
+    transform: scale(1.2);
+}
+
+/* General styling for the skill cards */
+.skill-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 1rem 0; /* Add some vertical spacing for better layout */
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon hover effect */
+.icon-hover {
+    transition: transform 0.3s ease;
+}
+
+.icon-hover:hover {
+    transform: scale(1.2);
+}
+
+/* Media query for smaller screens (mobile) */
+@media (max-width: 768px) {
+    .skill-card {
+        margin: 0.5rem; /* Reduce margin for mobile */
+        flex-basis: calc(50% - 1rem); /* Ensure 2 items per row in mobile */
+    }
+
+    .icon-hover {
+        width: 60px; /* Smaller icon size for mobile */
+        height: 60px; /* Smaller icon size for mobile */
+    }
+}
+
+/* Media query for extra small screens (very small mobile devices) */
+@media (max-width: 576px) {
+    .skill-card {
+        flex-basis: calc(100% - 1rem); /* Ensure 1 item per row on extra small screens */
+    }
+
+    .icon-hover {
+        width: 50px; /* Even smaller icon size for extra small screens */
+        height: 50px;
+    }
+}
+
+
+/* Hoverable effect for cards */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.card-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Hobby card specific adjustments */
+.hobby-card {
+    background-color: #f8f9fa;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+}
+
+/* Hoverable wrapper to apply hover effect */
+.hoverable:hover {
+    cursor: pointer;
+}
+
+/* Section titles */
+h2 {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* Add padding and margin to make sections more spaced out */
+.tab-pane {
+    padding: 2rem;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    color: #666;
+    font-size: 0.9rem;
+}
+/* Style for Home section */
+.home-section {
+    background-color: #f8f9fa; /* Light background */
+    padding: 4rem 0;
+    border-radius: 15px; /* Slight rounding for a modern look */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+/* Style for profile image */
+.profile-img {
+    border-radius: 50%; /* Circular image */
+    border: 5px solid #007bff; /* Add border around image */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
+}
+
+.profile-img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Style for the name and introduction text */
+h1.display-4 {
+    font-size: 3rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.text-body-emphasis {
+    color: #007bff; /* Highlight text color */
+}
+
+/* Add padding and ensure proper alignment */
+.container {
+    max-width: 1000px; /* Constrain content width */
+}
+
+@media (max-width: 768px) {
+    /* Adjustments for mobile view */
+    h1.display-4 {
+        font-size: 2.5rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+}
+/* Style for carousel */
+.carousel {
+    margin: 0 auto;
+    width: 80%; /* Adjusts carousel width to be centered and not too wide */
+}
+
+.project-img {
+    border-radius: 15px; /* Adds a slight rounding to the images for a modern look */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Adds depth to the images */
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6); /* Adds a transparent background to the captions */
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); /* Ensures the icons are visible regardless of background */
+}
+
+/* Make sure carousel has good spacing on smaller screens */
+@media (max-width: 768px) {
+    .carousel {
+        width: 100%; /* Full width for mobile devices */
+    }
+
+    .carousel-caption {
+        font-size: 0.9rem;
+    }
+}
+
+/* Sidebar hidden in mobile view */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none !important; /* Ensure sidebar is hidden */
+    }
+
+    .content {
+        margin-left: 0 !important; /* Ensure content takes up full width when sidebar is hidden */
+        padding-bottom: 60px; /* Space for bottom navigation bar */
+    }
+
+    /* Mobile bottom navigation */
+    .mobile-nav {
+        background-color: #ffffff;
+        border-top: 1px solid #ddd;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        z-index: 1000;
+    }
+
+    .mobile-nav .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+
+    .mobile-nav .nav-link {
+        color: #495057;
+        font-size: 1.5rem;
+        padding: 10px;
+        transition: color 0.3s;
+    }
+
+    .mobile-nav .nav-link.active {
+        background-color: transparent !important; /* Removes the blue background */
+        color: #007bff !important; /* Keeps the active link color */
+    }
+    
+
+    .mobile-nav .nav-link:hover {
+        color: #007bff;
+    }
+}
+
+/* Position Contact Me at the bottom of the sidebar on desktop */
+@media (min-width: 769px) {
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Ensure content is spread out */
+        height: 100vh; /* Full height for the sidebar */
+    }
+
+    .contact-section {
+        margin-top: auto; /* Push the contact section to the bottom */
+        padding-bottom: 10px; /* Add some padding for better spacing */
+    }
+}
+
+/* Ensure Contact Me shows properly on mobile in the navbar */
+@media (max-width: 768px) {
+    .contact-section {
+        display: none; /* Hide the sidebar Contact Me on mobile since it's in the bottom navbar */
+    }
+}
+
